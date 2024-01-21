@@ -1,0 +1,344 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+
+
+
+.container {
+    display: flex;
+    margin: 20px;
+    padding: 20px;
+}
+
+
+.image-column {
+    flex: 0 0 250px;
+    margin-right: 50px;
+}
+
+.image {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.extraRow {
+    display: flex;
+    margin-top: 10px;
+}
+
+.details-rows {
+    display: flex;
+    /* align-items: center; */
+    /* justify-content: center; */
+    margin-right: 10px;
+}
+
+
+.details-column {
+    flex: 1;
+}
+
+/* Styling for the image */
+
+
+/* Styling for the details row */
+.details-row {
+    display: flex;
+    /* align-items: center; */
+    /* justify-content: center; */
+    margin-bottom: 10px;
+}
+
+/* Styling for the label in the details row */
+.label {
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.pName {
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.pCity {
+    font-weight: bold;
+    /* font-size: 30px; */
+}
+
+.pBio {
+    font-weight: bold;
+}
+
+.pFollowers {
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.pFollowing {
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.pTotalPublicRepo {
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.image-column1 {
+    flex: 0 0 25px;
+    margin-right: 20px;
+}
+
+.image1 {
+    /* width: 100%; */
+    height: 25px;
+    object-fit: cover;
+}
+
+
+/* 
+ */
+.container2 {
+    display: flex;
+    margin: 20px;
+    padding: 20px;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+    /* Allow items to wrap to the next line */
+}
+
+.column {
+    width: 40%;
+    /* Set a fixed width for each column */
+    border: 1px solid #000;
+    /* flex: 40%; */
+
+    /* margin-right: 20px; */
+    border-radius: 5px;
+    margin-bottom: 20px;
+    /* Add margin at the bottom of each column */
+    box-sizing: border-box;
+    /* Include padding and border in the width calculation */
+}
+
+.row {
+    padding: 10px;
+    box-sizing: border-box;
+    /* Include padding and border in the width calculation */
+}
+
+/* Style for the title */
+.title {
+    font-size: 30px;
+    font-weight: bold;
+    color: rgb(0, 140, 255);
+    margin-bottom: 10px;
+}
+
+/* Style for the description */
+.description {
+    margin-top: 5px;
+    color: #000;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.list-item {
+    background-color: rgb(0, 140, 255);
+    padding: 5px;
+    margin: 5px;
+    margin-top: 10px;
+    color: white;
+    font-weight: 700;
+    border-radius: 5px;
+
+    flex: 0 auto;
+    /* Each item takes the available width in the flex container */
+    box-sizing: border-box;
+    /* Include padding and border in the width calculation */
+}
+
+.list-item1 {
+    background-color: rgb(91, 167, 230);
+    padding: 5px;
+    margin: 5px;
+    margin-top: 10px;
+    color: white;
+    font-weight: 700;
+    border-radius: 5px;
+    font-size: 12px;
+
+    flex: 0 auto;
+    /* Each item takes the available width in the flex container */
+    box-sizing: border-box;
+}
+
+
+
+
+
+.container3 {
+    /* position: absolute;
+    bottom: 0;
+    right: 50%;
+    top: 50%; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.container4 {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    /* Stack the elements vertically */
+    align-items: center;
+    justify-content: space-between;
+    /* margin: 20px; */
+    /* padding: 20px; */
+}
+
+.container5 {
+    margin: 20px;
+    padding: 20px;
+  
+}
+
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #333;
+}
+
+input {
+    width: 60px;
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-right: 10px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    padding: 10px 10px;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+
+@media screen and (max-width: 800px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+    }
+
+    .container2 {
+        margin: 0;
+    }
+
+    .image {
+        margin-bottom: 10px;
+    }
+
+    .image-column {
+        flex: 0 0 250px;
+        margin-bottom: 0;
+        margin-right: 0;
+    }
+
+    .title {
+        font-size: 25px;
+    }
+
+    .extraRow {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0;
+    }
+
+    .list-item {
+        font-size: 12px;
+    }
+
+    .description {
+        font-size: 14px;
+    }
+
+    .column {
+        width: 100%;
+        /* Adjust the width as needed */
+        /* margin-right: 2%;  */
+        /* Adjust the margin as needed */
+    }
+
+    .column:nth-child(2n) {
+        margin-right: 0;
+        /* Remove margin for every second column */
+    }
+
+    .container4 {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+        padding: 0;
+    }
+
+    .container5 {
+        display: flex;
+        align-items: center;
+        margin: 0 0 0 auto;
+        padding: 0;
+        
+    }
+
+    #reposPerPage {
+        width: 30%;
+        /* Adjust the width as needed */
+        box-sizing: border-box;
+        margin-right: 7px;
+        padding: 8px;
+        font-size: 13px;
+    }
+
+    .bt {
+        background-color: #007bff;
+        /* Button color */
+        color: #fff;
+        /* Text color */
+        border: none;
+        padding: 10px 20px;
+        cursor: pointer;
+        font-size: 13px;
+        border-radius: 5px;
+    }
+}
